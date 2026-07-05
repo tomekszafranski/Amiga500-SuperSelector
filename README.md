@@ -18,19 +18,19 @@ There is also a jumper on bottom side of PCB called external kickstart selector 
 You have two PCBs. Installation is easy but think about how to put wires first.
 
 Kickstart ROM:
-* remove your Kickstart ROM and mount this PCB with 27C800 or 27C160 EPROM (socket facing north)
-* you should be able to close the shield, to make it easier you may want to install low profile precision pins
+* remove original Kickstart ROM and mount this PCB with 27C800 or 27C160 EPROM (socket facing north)
+* you should be able to close the shield, to make it easier install low profile precision pins
 * as miniumum mount pin on A18. A19 can also be installed or set permanently to 0 or 1 if not used
 
 Selector itself:
-* remove Even CIA chip and mount it in a socket
-* instal selector with CIA facing north
-* connect wire from pin K to A18 on kickstart ROM PCB
-* connect wire from pin RST to pin 21 of Gary chip 
+* remove Even CIA chip and mount it in a socket on PCB (I recomend using precision sockets for original chips)
+* instal selector with CIA chip facing north
+* connect wire from pin K on a selector to A18 on kickstart ROM 
+* connect wire from pin RST on a slector to pin 21 of Gary chip 
 
 ## Remarks
 
-* Kickstart PCB has A18 and A19 lines available so is able to choose from 4 version of kickstarts but this version of selector allows only 2 versions (not enough pins on ATtiny)
+* Kickstart PCB has A18 and A19 lines available so is able to choose from 4 version of kickstarts but this version of selector allows switching between only 2 versions (not enough pins on ATtiny)
 * To prepare 2 kickstarts ROM you need 27C800 that can be programmed by popular TL-866 using 27C400/800/160 programmer you can buy online. Rember to swap bytes before burning.
 
 Have fun!
