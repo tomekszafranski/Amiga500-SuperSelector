@@ -5,9 +5,9 @@ If you have real Amiga 500 machine but don't have a wide collection of 3.5" flop
 ## How it works
 
 * If you press Ctrl-A-A briefly or press and release in less then 3 seconds, simple reset is exectuted. 
-* If you keep Ctrl-A-A combination pressed beyond 3 seconds you will hear tick - now you are in boot selector mode. If you release keys now you will switch boot device. After releaseing you will hear one or two beeps meaning internal or external device.
-* If you keep Ctrl-A-A pressed beyond 6 seconds you will hear another short tick meaning you are in kickstart selection mode. If you release keys now you switch kickstarts, you will hear longer beep (kickstart) and one or two beeps for first or second copy of kickstart.
-* If you keep keys pressed for longer then 9s you will hear another tick meaning switching is over and simple rest will be done when keys are released.
+* If you keep Ctrl-A-A combination pressed beyond 3 seconds you will hear short tick - now you are in boot selector mode. If you release keys now, you will switch boot device. After releasing you will hear one or two beeps meaning internal or external device is set.
+* If you keep Ctrl-A-A pressed beyond 6 seconds you will hear another short tick meaning you are in kickstart selection mode. If you release keys now, you will switch kickstarts. You will hear longer beep (kickstart) and one or two beeps for first or second copy of kickstart.
+* If you keep keys pressed for more then 9 seconds you will hear another tick meaning switching is over and simple reset will be done when keys are released.
 
 At boot you will hear one or two beeps meaning boot is set to internal or external device.
 
