@@ -15,15 +15,19 @@ There is also a jumper on bottom side of PCB called external kickstart selector 
 
 ## Installations
 
-You have two PCBs.
+You have two PCBs. Installation is easy but think about how to put wires first.
+
 Kickstart ROM:
+
 * remove your Kickstart ROM and mount this PCB with 27C800 or 27C160 EPROM (socket north).
 * you should be able to close the shield, to make it easier you may want to install low profile precision pins
 * as miniumum connect wire to A18. A19 can also be connected or set permanently to 0 or 1 if not used
+
 Selector:
-* Remove Even CIA chip and mount it in a socket
-* Instal selector with CIA north
-* Connect wire from K to A18 on kickstart
+
+* remove Even CIA chip and mount it in a socket
+* instal selector with CIA north
+* Cconnect wire from K to A18 on kickstart
 * connect wire from RST to pin 21 on Gary chip 
 
 ## Remarks
