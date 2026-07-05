@@ -13,7 +13,7 @@ At boot you will hear one or two beeps meaning boot is set to internal or extern
 
 There is also a jumper on bottom side of PCB called external kickstart selector mode. In internal mode (jumper open) selector direcly sets A18 line of ROM to choose required kickstart version. External mode (jumper closed) is meant to cooperate with external kickstart switcher which switches kickstart after 3 second of holding Ctrl-A-A keys. You connect it as its Reset line.
 
-## Installations
+## Installation
 
 You have two PCBs. Installation is easy but think about how to put wires first.
 
@@ -22,16 +22,19 @@ Kickstart ROM:
 * you should be able to close the shield, to make it easier install low profile precision pins
 * as miniumum mount pin on A18. A19 can also be installed or set permanently to 0 or 1 if not used
 
-Selector itself:
-* remove Even CIA chip and mount it in a socket on PCB (I recomend using precision sockets for original chips)
-* instal selector with CIA chip facing north
-* connect wire from pin K on a selector to A18 on kickstart ROM 
-* connect wire from pin RST on a slector to pin 21 of Gary chip 
+Selector itself (two version available mostly-SMD and THT-only):
+* before you install selector in you Amiga it is needed to program ATtiny chip using programmer like USBasp. If you're building THT version you can program controller before putting in in a socket, for SMD version - use provided ICSP pins 
+* remove Even CIA chip and mount it in a selector's socket (I recomend using precision sockets for original chips)
+* install selector PCB in CIA socket on board with CIA chip facing north
+* connect wire from selector's pin KS to A18 on kickstart ROM 
+* connect wire from selector's pin RST to pin 21 of Gary chip
+
 
 ## Remarks
 
-* Kickstart PCB has A18 and A19 lines available so is able to choose from 4 version of kickstarts but this version of selector allows switching between only 2 versions (not enough pins on ATtiny)
-* To prepare 2 kickstarts ROM you need 27C800 that can be programmed by popular TL-866 using 27C400/800/160 programmer you can buy online. Rember to swap bytes before burning.
+* Kickstart PCB has A18 and A19 address lines available so it is possible to choose from 4 version of kickstarts however this version of selector allows switching between only 2 versions (not enough pins on ATtiny)
+* To prepare 2 kickstarts ROM you need 27C800 that can be programmed by popular TL-866Plus using 27C400/800/160 programmer adapter you can buy online. Rember to swap bytes before burning!
+
 
 Have fun!
 
