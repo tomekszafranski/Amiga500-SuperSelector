@@ -23,7 +23,7 @@ You have two PCBs. Installation is easy but think about how to put wires first.
 Kickstart ROM:
 * remove original Kickstart ROM and mount this PCB with 27C800 or 27C160 EPROM (socket facing north)
 * you should be able to close the shield, to make it easier install low profile precision pins
-* as miniumum mount pin on A18. A19 can also be installed or set permanently to 0 or 1 if not used
+* as miniumum mount pin on A18. A19 can also be installed or set permanently to 0 or 1 (on bottom side) if not used
 
 <img width="1411" height="511" alt="kick" src="https://github.com/user-attachments/assets/e964858a-7cee-4796-beb5-9cd7326b2015" />
 
