@@ -1,4 +1,4 @@
-# Super Selector for amiga 500 (boot device/kickstart version)
+# Super Selector for Amiga 500
 
 ## Story
 
