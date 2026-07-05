@@ -11,12 +11,25 @@ If you have real Amiga 500 machine but don't have a wide collection of 3.5" flop
 
 At boot you will hear one or two beeps meaning boot is set to internal or external device.
 
-There is also something called internal or external kickstart selector mode (jumper on bottom side of pcb). In internal mode selector direcly sets A18 line of ROM to choose required kickstart version. External mode is meant to cooperate with external kickstart switcher which is meant to switch kickstart after 3 second of holding Ctrl-A-A keys. You connect it as its reset line.
+There is also a jumper on bottom side of PCB called external kickstart selector mode. In internal mode (jumper open) selector direcly sets A18 line of ROM to choose required kickstart version. External mode (jumper closed) is meant to cooperate with external kickstart switcher which switches kickstart after 3 second of holding Ctrl-A-A keys. You connect it as its Reset line.
 
-## Remarks:
+## Installations
 
-* Kickstart pcb is able to choose from 4 kickstarts but this version of selector allows on 2 versions (not enough pins on ATtiny)
-* To prepare two-kickstarts ROM you need 27C800 that can be programmed by popular TL-866 using 27C400/800/160 programmer you can buy online.
+You have two PCBs.
+Kickstart ROM:
+* remove your Kickstart ROM and mount this PCB with 27C800 or 27C160 EPROM (socket north).
+* you should be able to close the shield, to make it easier you may want to install low profile precision pins
+* as miniumum connect wire to A18. A19 can also be connected or set permanently to 0 or 1 if not used
+Selector:
+* Remove Even CIA chip and mount it in a socket
+* Instal selector with CIA north
+* Connect wire from K to A18 on kickstart
+* connect wire from RST to pin 21 on Gary chip 
+
+## Remarks
+
+* Kickstart PCB has A18 and A19 lines available so is able to choose from 4 version of kickstarts but this version of selector allows only 2 versions (not enough pins on ATtiny)
+* To prepare 2 kickstarts ROM you need 27C800 that can be programmed by popular TL-866 using 27C400/800/160 programmer you can buy online. Rember to swap bytes before burning.
 
 Have fun!
 
