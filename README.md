@@ -1,4 +1,4 @@
-# Amiga500-SuperSelector
+# Amiga 500 Super Selector (boot/kickstart)
 
 If you have real Amiga 500 machine but don't have a wide collection of 3.5" floppies you probably would use Gotek drive. To do that, you need to have small device called boot selector so that you can boot from Gotek instead of internal drive. This is usually done using small switch mounted somewhere in the case or switchless by pressing and keeping Ctrl-Amiga-Amiga key combination for longer time. Great! Next you may want to have Kickstart ROM selector that will allow you to have 2 or more versions of Kickstart e.g. Kickstart 3.1 for better Workbench and features and older Kickstart 1.3 for compatibility. Again, this can be switched by small switch mounted somewhere is the case or switchless by pressing and keeping Ctrl-A-A keys for longer time. The problem is when you want to use both and both switchless versions, because they will mix. There is no simply way to fix it as there is no possiblity to reprogram them.
 
