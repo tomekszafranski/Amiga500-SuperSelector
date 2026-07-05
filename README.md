@@ -13,6 +13,10 @@ At boot you will hear one or two beeps meaning boot is set to internal or extern
 
 There is also a jumper on bottom side of PCB called external kickstart selector mode. In internal mode (jumper open) selector direcly sets A18 line of ROM to choose required kickstart version. External mode (jumper closed) is meant to cooperate with external kickstart switcher which switches kickstart after 3 second of holding Ctrl-A-A keys. You connect it as its Reset line.
 
+<img width="1444" height="962" alt="smd" src="https://github.com/user-attachments/assets/107dd6bb-68ff-4730-81b7-1525fd2abe8e" />
+<img width="1444" height="1010" alt="tht" src="https://github.com/user-attachments/assets/9b51eb3c-cfcf-43ee-b2a0-1d2f6bb81153" />
+<img width="1411" height="511" alt="kick" src="https://github.com/user-attachments/assets/e964858a-7cee-4796-beb5-9cd7326b2015" />
+
 ## Installation
 
 You have two PCBs. Installation is easy but think about how to put wires first.
@@ -29,6 +33,8 @@ Selector itself (two version available mostly-SMD and THT-only):
 * connect wire from selector's pin KS to A18 on kickstart ROM 
 * connect wire from selector's pin RST to pin 21 of Gary chip
 
+<img width="1748" height="1150" alt="smd" src="https://github.com/user-attachments/assets/03f10641-e78b-4f7a-986a-0ed970236c97" />
+<img width="1868" height="1300" alt="board" src="https://github.com/user-attachments/assets/623d7f23-73c6-4cdf-b8e0-c566d5559642" />
 
 ## Remarks
 
