@@ -29,13 +29,11 @@ You have two PCBs. Installation is easy but think about how to put wires first.
 
 <img width="1411" height="511" alt="kick" src="https://github.com/user-attachments/assets/e964858a-7cee-4796-beb5-9cd7326b2015" />
 
-
-
-2. Selector itself (two version available mostly-SMD and THT-only):
+2. Selector itself (two versions available: mostly-SMD and THT-only):
 * before you install selector in you Amiga it is needed to program ATtiny chip using programmer like USBasp. If you're building THT version you can program controller before putting in in a socket, for SMD version - use provided ICSP pins (insert programmer's pins and press them is enough to make contact
 * remove Even CIA chip and mount it in a selector's socket (I recomend using precision sockets for original chips)
 * install selector PCB in CIA socket on board with CIA chip facing north
-* connect selector's pin KS to A18 on kickstart ROM 
+* connect selector's pin KS to A18 on kickstart ROM (first PCB)
 * connect selector's pin RST to pin 21 of Gary chip
 
 <img width="1444" height="962" alt="smd" src="https://github.com/user-attachments/assets/107dd6bb-68ff-4730-81b7-1525fd2abe8e" />
