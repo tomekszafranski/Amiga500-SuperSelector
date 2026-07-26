@@ -45,7 +45,7 @@ You have two PCBs. Installation is easy but think about how to put wires first.
 ## Remarks
 
 * Kickstart PCB has A18 and A19 address lines available so it is possible to choose from 4 version of kickstarts however this version of selector allows switching between only 2 versions (not enough pins on ATtiny)
-* To prepare 2 kickstarts ROM you need 27C800 that can be programmed by popular TL-866Plus using 27C400/800/160 programmer adapter you can buy online. Rember to swap bytes before burning!
+* To prepare two-kickstarts EPROM you need 27C800 that can be programmed by popular TL-866Plus using 27C400/800/160 programmer adapter you can buy online. Rember to swap bytes before burning!
 
 
 Have fun!
