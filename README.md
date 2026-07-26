@@ -6,7 +6,7 @@ If you have real Amiga 500 machine but don't have a wide collection of 3.5" flop
 
 ## How it works
 
-Super Selector allows to changed those two setting within one device:
+Super Selector allows to changed those two setting using one device:
 * If you press Ctrl-Amiga-Amiga briefly or press and release it in less then 3 seconds, simple reset is exectuted. 
 * If you keep Ctrl-Amiga-Amiga combination pressed beyond 3 seconds you will hear short tick - now you are in boot selector mode. If you release keys now, you will change boot device. After releasing keys you will hear one or two beeps meaning internal or external device is set.
 * If you keep Ctrl-Amiga-Amiga combination pressed beyond 6 seconds you will hear another short tick meaning you are in kickstart selection mode. If you release keys now, you will change kickstarts. You will hear longer beep (kickstart) and one or two beeps for first or second copy of Kickstart.
