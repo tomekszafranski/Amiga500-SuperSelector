@@ -22,7 +22,7 @@ Source code for ATtiny doing the switching is available so you can customize it.
 
 You have two PCBs. Installation is easy but think about how to put wires first.
 
-Kickstart ROM:
+1. Kickstart ROM:
 * remove original Kickstart ROM and mount this PCB with 27C800 or 27C160 EPROM (socket facing north)
 * PCB is designed so that you should be able to close the upper shield, to make it easier install low profile precision pins
 * as miniumum mount pin on A18. A19 can also be installed or set permanently to 0 or 1 (on bottom side) if not used
@@ -30,8 +30,9 @@ Kickstart ROM:
 <img width="1411" height="511" alt="kick" src="https://github.com/user-attachments/assets/e964858a-7cee-4796-beb5-9cd7326b2015" />
 
 
-Selector itself (two version available mostly-SMD and THT-only):
-* before you install selector in you Amiga it is needed to program ATtiny chip using programmer like USBasp. If you're building THT version you can program controller before putting in in a socket, for SMD version - use provided ICSP pins 
+
+2. Selector itself (two version available mostly-SMD and THT-only):
+* before you install selector in you Amiga it is needed to program ATtiny chip using programmer like USBasp. If you're building THT version you can program controller before putting in in a socket, for SMD version - use provided ICSP pins (insert programmer's pins and press them is enough to make contact
 * remove Even CIA chip and mount it in a selector's socket (I recomend using precision sockets for original chips)
 * install selector PCB in CIA socket on board with CIA chip facing north
 * connect selector's pin KS to A18 on kickstart ROM 
