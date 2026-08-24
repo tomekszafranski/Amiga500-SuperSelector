@@ -12,7 +12,7 @@ Super Selector allows to change those two setting using one device:
 * If you keep Ctrl-Amiga-Amiga combination pressed beyond 6 seconds you will hear another short tick meaning you are in kickstart ROM selection mode. If you release keys now, you will toggle kickstarts. You will hear longer beep (kickstart) and one or two beeps for first or second copy of Kickstart selected.
 * If you keep keys pressed for more than 9 seconds you will hear another tick meaning switching is over and simple reset will be executed when keys are released.
 
-Additionally every time at boot time you will hear one or two beeps meaning boot device is set to internal or external device.
+Additionally, every time at boot you will hear one or two beeps meaning boot device is set to internal or external device.
 
 There is also a jumper on bottom side of PCB titled "external kickstart selector mode". In internal mode (jumper open) selector directly sets A18 line of Kickstart ROM to choose required Kickstart version. External mode (jumper closed) is meant to cooperate with external kickstart switcher which switches Kickstart after 3 second of holding Ctrl-Amiga-Amiga keys. You connect it as its Reset line.
 
