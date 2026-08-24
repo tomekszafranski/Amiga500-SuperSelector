@@ -16,7 +16,7 @@ Additionally, every time at boot you will hear one or two beeps meaning boot dev
 
 There is also a jumper on bottom side of PCB titled "external kickstart selector mode". In internal mode (jumper open) selector directly sets A18 line of Kickstart ROM to choose required Kickstart version. External mode (jumper closed) is meant to cooperate with external kickstart switcher which switches Kickstart after 3 second of holding Ctrl-Amiga-Amiga keys. You connect it as its Reset line.
 
-Source code for ATtiny doing the switching is available so that you can customize it.
+Source code for ATtiny doing the switching is available so that you can customize it and reprogram even after installation.
 
 ## Installation
 
