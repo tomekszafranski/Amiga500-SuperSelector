@@ -2,21 +2,21 @@
 
 ## Story
 
-If you have real Commodore Amiga 500 machine but don't have a wide collection of 3.5" floppies you probably would use Gotek drive for loading programs. But because most programs want to run from DF0, you need a device called boot selector that allows changing drives assignment and boot from Gotek instead of internal drive. This is usually done using small switch mounted somewhere in the case or switchless by pressing Ctrl-Amiga-Amiga key combination for longer time. Great! Next, you may also want to have Kickstart ROM selector that allows having two or more versions of Kickstart e.g. Kickstart 3.1 for its features and better Workbench and older Kickstart 1.3 for compatibility. Again, this can be done by a switch mounted somewhere is the case or switchless by pressing Ctrl-Amiga-Amiga keys for longer time. The problem is when you want to use both devices and both switchless versions - they will probably mix up and there is no simple way to fix it as there is no possibility to reprogram/integrate those devices.
+If you have real hardware Commodore Amiga 500 but don't have a wide collection of 3.5" floppies you probably would use Gotek drive for loading programs. But because most programs want to run from DF0, you need a device called _boot selector_ that allows changing drives assignment and boot from Gotek instead of internal drive. This is usually achieved using small switch mounted somewhere in the case or switchless by pressing Ctrl-Amiga-Amiga key combination for longer time. Great! Next, you may also want to have Kickstart ROM selector that allows having two or more versions of Kickstart e.g. Kickstart 3.1 (or later) for its features and older Kickstart 1.3 for compatibility. Again, this can be done by a switch mounted somewhere is the case or switchless by pressing Ctrl-Amiga-Amiga keys for longer time. The problem is when you want to use both devices and both switchless versions - they will probably mix up and there is no simple way to fix it as there is usially no possibility to reprogram/integrate them.
 
 ## How it works
 
-Super Selector allows to change those two setting using one device:
+This Super Selector allows to change two setting using one device. This is how it works:
 * If you press Ctrl-Amiga-Amiga briefly or press and release it in less than 3 seconds, simple reset is executed. 
-* If you keep Ctrl-Amiga-Amiga combination pressed beyond 3 seconds you will hear short tick - now you are in boot selector mode. If you release keys now, you will toggle boot device. After releasing keys you will hear beeps meaning that internal (one beep) or external device (two beeps) is set.
-* If you keep Ctrl-Amiga-Amiga combination pressed beyond 6 seconds you will hear another short tick meaning you are in kickstart ROM selection mode. If you release keys now, you will toggle kickstarts. You will hear longer beep (kickstart) and one or two beeps for first or second copy of Kickstart selected.
+* If you keep Ctrl-Amiga-Amiga combination pressed beyond 3 seconds you will hear short tick - now you are in boot selector mode. If you release keys now, you will toggle boot device. After releasing keys you will hear one beep, meaning that internal floppy is selected or two beeps for external Gotek drive.
+* If you keep Ctrl-Amiga-Amiga combination pressed beyond 6 seconds you will hear another short tick meaning you are in kickstart ROM selection mode. If you release keys now, you will toggle kickstarts. You will hear longer beep (for kickstart) and one or two beeps for first or second copy of Kickstart selected.
 * If you keep keys pressed for more than 9 seconds you will hear another tick meaning switching is over and simple reset will be executed when keys are released.
 
-Additionally, every time at boot you will hear one or two beeps meaning boot device is set to internal or external device.
+Additionally, every time at boot you will hear one or two beeps meaning boot device is set to internal floppy or external Gotek device.
 
-There is also a jumper on bottom side of PCB titled "external kickstart selector mode". In internal mode (jumper open) selector directly sets A18 line of Kickstart ROM to choose required Kickstart version. External mode (jumper closed) is meant to cooperate with external kickstart switcher which switches Kickstart after 3 second of holding Ctrl-Amiga-Amiga keys. You connect it as its Reset line.
+There is also a jumper on bottom side of PCB titled "external kickstart selector mode". In internal mode (jumper open) selector directly sets A18 line of Kickstart ROM to choose required Kickstart version. External mode (jumper closed) is meant to cooperate with external kickstart switcher you may already have which switches Kickstart after 3 second of holding Ctrl-Amiga-Amiga keys. You connect it as its Reset line.
 
-Source code for ATtiny doing the switching is available so that you can customize it and reprogram even after installation.
+Source code for ATtiny controller doing the switching is available so that you can customize it and reprogram even after installation.
 
 ## Installation
 
